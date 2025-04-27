@@ -36,3 +36,13 @@ Value of "name": $json[name]
 ```
 
 Now the code will return the value of "name", which is "value".
+Now let's see how we can make it using a variable. This is how the default value of a variable should look like:
+
+![Default Value](https://ibb.co/cSsMjzSS)
+
+You can manually set names and values inside the variable, but I prefer it this way.
+Once done, we'll parse the value of the variable inside `$jsonParse`, like this:
+
+```codeblock
+$jsonParse[$getVar[VARIABLE;$authorID]]
+```
